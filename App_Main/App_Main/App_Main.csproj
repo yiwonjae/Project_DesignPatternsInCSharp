@@ -54,6 +54,10 @@
       <Project>{88e77457-078f-4107-9e8b-d18ec7df8f25}</Project>
       <Name>C_AdapterPattern</Name>
     </ProjectReference>
+    <ProjectReference Include="..\IMapp\IMapp.csproj">
+      <Project>{f8a5b68a-7f7d-4050-bed2-c0fea751a8fa}</Project>
+      <Name>IMapp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

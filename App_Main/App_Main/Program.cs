@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IMapp;
 
 namespace App_Main
 {
@@ -12,10 +13,11 @@ namespace App_Main
         {
             String inputData = Console.ReadLine();
 
+            IMApp MRun = null;
 
             switch(Convert.ToInt32(inputData))
             {
-                case 0: break;
+                case 0: MRun = new C_AdapterPattern.CMain(); break;
                 case 1: break;
                 case 2: break;
                 case 3: break;
@@ -23,8 +25,12 @@ namespace App_Main
                 case 5: break;
             }
 
-
+            MRun.RunMethod();
 
         }
     }
+
+
+
+
 }
