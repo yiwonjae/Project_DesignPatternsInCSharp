@@ -18,8 +18,8 @@ namespace App_Main
             switch(Convert.ToInt32(inputData))
             {
                 case 0: MRun = new C_AdapterPattern.CMain(); break;
-                case 1: break;
-                case 2: break;
+                case 1: MRun = new C_ProxyPattern.CMain(); break;
+                case 2: MRun = new C_MementoPattern.CMain(); break;
                 case 3: break;
                 case 4: break;
                 case 5: break;

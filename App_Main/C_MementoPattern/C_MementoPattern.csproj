@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EB00A523-2080-4C87-A684-984DF8BDA1FD}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{9851C9C7-AE05-453F-A84D-3A4E74598731}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>App_Main</RootNamespace>
-    <AssemblyName>App_Main</AssemblyName>
+    <RootNamespace>C_MementoPattern</RootNamespace>
+    <AssemblyName>C_MementoPattern</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,25 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\C_AdapterPattern\C_AdapterPattern.csproj">
-      <Project>{88e77457-078f-4107-9e8b-d18ec7df8f25}</Project>
-      <Name>C_AdapterPattern</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\C_MementoPattern\C_MementoPattern.csproj">
-      <Project>{9851c9c7-ae05-453f-a84d-3a4e74598731}</Project>
-      <Name>C_MementoPattern</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\C_ProxyPattern\C_ProxyPattern.csproj">
-      <Project>{68a2877f-11a0-4c8e-bedd-0d7bb6559002}</Project>
-      <Name>C_ProxyPattern</Name>
-    </ProjectReference>
     <ProjectReference Include="..\IMapp\IMapp.csproj">
       <Project>{f8a5b68a-7f7d-4050-bed2-c0fea751a8fa}</Project>
       <Name>IMapp</Name>
