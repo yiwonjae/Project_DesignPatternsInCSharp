@@ -48,7 +48,7 @@ namespace C_ProxyPattern
 
         #endregion
         
-        #region Method
+        #region Method 무거운 일
 
 
         /// <summary>
@@ -87,17 +87,14 @@ namespace C_ProxyPattern
             Console.WriteLine(_msg);
         }
         #endregion
-
-
+        
     }
 
     public class PrinterProxy:IPrintable
     {
         private String name;
         private Printer real;
-
-
-
+        
         #region 생성자
         public PrinterProxy() { }
         public PrinterProxy(String _name)
@@ -106,9 +103,7 @@ namespace C_ProxyPattern
         }
 
         #endregion
-
         
-
         #region Interface 구현
 
 
@@ -128,17 +123,19 @@ namespace C_ProxyPattern
             return this.name;
         }
 
+        private void realize()
+        {
+            if (null == real)
+                real = new Printer(name);
+        }
+
         public void print(String _msg)
         {
             realize();
             real.print(_msg);
         }
 
-        private void realize()
-        {
-            if (null == real)
-                real = new Printer(name);
-        }
+
 
 
         #endregion

@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_ProxyPattern", "C_ProxyPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_MementoPattern", "C_MementoPattern\C_MementoPattern.csproj", "{9851C9C7-AE05-453F-A84D-3A4E74598731}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_StatePattern", "C_StatePattern\C_StatePattern.csproj", "{A5C685DC-CA46-4EED-B6D6-1D34EAC28615}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{9851C9C7-AE05-453F-A84D-3A4E74598731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9851C9C7-AE05-453F-A84D-3A4E74598731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9851C9C7-AE05-453F-A84D-3A4E74598731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C685DC-CA46-4EED-B6D6-1D34EAC28615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C685DC-CA46-4EED-B6D6-1D34EAC28615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C685DC-CA46-4EED-B6D6-1D34EAC28615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C685DC-CA46-4EED-B6D6-1D34EAC28615}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
